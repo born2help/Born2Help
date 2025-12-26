@@ -143,3 +143,74 @@ footer a {
     font-size: 16px;
   }
 }
+
+/* =========================
+   HERO SECTION (HOME PAGE)
+========================= */
+
+.hero {
+  background: linear-gradient(135deg, #0b3c91, #062a66);
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+/* HERO LAYOUT */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  max-width: 600px;
+}
+
+.hero-right a {
+  display: block;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 16px;
+}
+
+.hero-right a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE HERO */
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-left,
+  .hero-right {
+    margin: auto;
+  }
+}
