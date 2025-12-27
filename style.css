@@ -113,6 +113,7 @@ a:hover {
   }
 }
 
+/* ================= HERO RIGHT BUTTONS ================= */
 .hero-right {
   display: flex;
   flex-direction: column;
@@ -121,17 +122,43 @@ a:hover {
 }
 
 .hero-right a {
-  display: block;
-  padding: 12px 22px;
-  background: rgba(255,255,255,0.08);
-  color: white;
-  border-radius: 8px;
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0b3c91, #6aa8ff);
+  border-radius: 12px;
   text-decoration: none;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
 }
 
 .hero-right a:hover {
-  background: rgba(255,255,255,0.18);
-  transform: translateY(-2px);
+  background: linear-gradient(135deg, #6aa8ff, #0b3c91);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.hero-right a:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .hero-right {
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-right a {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 20px;
+    font-size: 15px;
+  }
 }
 
 /* ================= FLOATING SHAPES ================= */
