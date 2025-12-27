@@ -50,14 +50,17 @@ a:hover {
   overflow: hidden;
 }
 
-/* ================= HERO LEFT IMPROVED ================= */
+/* ================= HERO LEFT PREMIUM ================= */
 .hero-left h1 {
   font-size: clamp(48px, 6vw, 78px);
   font-weight: 800;
   margin-bottom: 20px;
-  color: #ffffff;
+  background: linear-gradient(90deg, #ffd700, #6aa8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   line-height: 1.2;
   letter-spacing: 1px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
 .hero-left h2 {
@@ -66,6 +69,7 @@ a:hover {
   letter-spacing: 1px;
   color: #9aa3ff;
   margin-bottom: 28px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 
 .hero-left p {
@@ -79,9 +83,10 @@ a:hover {
 .hero-left .founder-highlight {
   font-size: 18px;
   font-weight: 600;
-  color: #ffd700; /* gold color for emphasis */
+  color: #ffd700; /* gold for emphasis */
   font-style: italic;
   margin-top: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 /* ================= HERO RIGHT BUTTONS ================= */
