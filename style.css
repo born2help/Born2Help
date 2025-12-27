@@ -189,6 +189,31 @@ a:hover {
   50% { transform: translate(-30px,-20px); }
 }
 
+/* ================= HERO LEFT ANIMATIONS ================= */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-left h1,
+.hero-left h2,
+.hero-left p,
+.hero-left .founder-highlight {
+  opacity: 0; /* start hidden */
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-left h1 { animation-delay: 0.2s; }
+.hero-left h2 { animation-delay: 0.5s; }
+.hero-left p { animation-delay: 0.8s; }
+.hero-left .founder-highlight { animation-delay: 1.1s; }
+
 /* ================= HERO → DIVIDER ================= */
 .hero-divider {
   width: 100%;
