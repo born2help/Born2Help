@@ -473,3 +473,22 @@ footer a:hover {
   line-height: 1.7;
   max-width: 680px;
 }
+
+/* ================= HERO SOFT DEPTH ================= */
+
+.hero-left {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-left::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(106,168,255,0.12), transparent 70%);
+  filter: blur(18px);
+  z-index: -1;
+}
