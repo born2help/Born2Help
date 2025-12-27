@@ -231,3 +231,83 @@ footer {
   .hero-right { align-items: center; }
   .hero-right a { width: 100%; max-width: 360px; }
 }
+
+/* ================= BURN + ETHICS SECTION ================= */
+.burn-ethics {
+  position: relative;
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: 0 auto 80px;
+  background: linear-gradient(135deg, rgba(255,215,0,0.05), rgba(26,63,139,0.05));
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.burn-ethics h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #ffd700;
+  text-align: center;
+}
+
+.burn-ethics p {
+  font-size: 18px;
+  line-height: 1.85;
+  color: #eaeaf0;
+  margin-bottom: 18px;
+}
+
+/* Floating accent shapes inside Burn + Ethics */
+.burn-ethics::before,
+.burn-ethics::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.burn-ethics::before {
+  width: 120px;
+  height: 120px;
+  background: rgba(255,215,0,0.3);
+  top: -40px;
+  left: -30px;
+  animation: burnFloat1 16s ease-in-out infinite;
+}
+
+.burn-ethics::after {
+  width: 160px;
+  height: 160px;
+  background: rgba(26,63,139,0.3);
+  bottom: -50px;
+  right: -40px;
+  animation: burnFloat2 20s ease-in-out infinite;
+}
+
+@keyframes burnFloat1 {
+  0%, 100% { transform: translate(0,0); }
+  50% { transform: translate(-15px, 20px); }
+}
+
+@keyframes burnFloat2 {
+  0%, 100% { transform: translate(0,0); }
+  50% { transform: translate(20px,-25px); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .burn-ethics {
+    padding: 60px 20px;
+  }
+
+  .burn-ethics h3 {
+    font-size: 26px;
+  }
+
+  .burn-ethics p {
+    font-size: 16px;
+  }
+}
