@@ -374,6 +374,37 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* ================= HERO CARD ================= */
+.hero-card {
+  background: rgba(255, 255, 255, 0.05); /* semi-transparent dark card */
+  padding: 30px 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px); /* glass effect */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25); /* subtle shadow */
+}
+
+.hero-card h1, 
+.hero-card h2, 
+.hero-card p {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.hero-card h1 {
+  font-size: clamp(36px, 5vw, 60px);
+}
+
+.hero-card h2 {
+  font-size: 20px;
+  color: #9aa3ff;
+}
+
+.hero-card p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cfd3ff;
+}
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .hero {
