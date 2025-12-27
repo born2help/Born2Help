@@ -1,3 +1,51 @@
+/* ===============================
+   B2H GLOBAL FOUNDATION LOCK
+   Do NOT remove or move
+   =============================== */
+
+:root {
+  --b2h-bg-dark: #0b0f1a;
+  --b2h-bg-soft: #111827;
+  --b2h-accent: #32cd32;
+  --b2h-text-main: #e5e7eb;
+  --b2h-text-soft: #9ca3af;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--b2h-bg-dark);
+  color: var(--b2h-text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Prevent refresh / load regressions */
+section,
+div {
+  position: relative;
+}
+
+/* Animation safety */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 /* ================= RESET ================= */
 * {
   box-sizing: border-box;
