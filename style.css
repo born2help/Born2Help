@@ -902,6 +902,47 @@ footer a:hover {
   text-align: left;
 }
 
+/* ================= PARTICIPATION FLOATING SHAPES ================= */
+.participation-section::before,
+.participation-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.12;
+  filter: blur(4px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.participation-section::before {
+  width: 140px;
+  height: 140px;
+  background: var(--gold);
+  top: -30px;
+  left: 10%;
+  animation: floatSlow 20s ease-in-out infinite;
+}
+
+.participation-section::after {
+  width: 180px;
+  height: 180px;
+  background: var(--blue-soft);
+  bottom: -40px;
+  right: 15%;
+  animation: floatMedium 24s ease-in-out infinite;
+}
+
+/* Reuse existing keyframes from hero */
+@keyframes floatSlow {
+  0%,100% { transform: translate(0,0); }
+  50% { transform: translate(-20px,-30px); }
+}
+
+@keyframes floatMedium {
+  0%,100% { transform: translate(0,0); }
+  50% { transform: translate(20px,25px); }
+}
+
 /* ================= FOUNDER SAFEGUARDS SECTION ================= */
 .burn-ethics {
   position: relative;
