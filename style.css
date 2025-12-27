@@ -697,3 +697,67 @@ footer a:hover {
   filter: blur(18px);
   z-index: -1;
 }
+
+/* ================= HERO LEFT PREMIUM ================= */
+
+.hero-left-card {
+  position: relative;
+  padding: 40px 45px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  animation: fadeSlideUp 1.2s ease forwards;
+}
+
+.hero-intro {
+  font-size: 20px;
+  color: #cfd3ff;
+  margin-bottom: 25px;
+  max-width: 720px;
+}
+
+.hero-divider-line {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #ffd700, transparent);
+  margin: 25px 0;
+  border-radius: 2px;
+}
+
+.hero-quote {
+  font-size: 20px;
+  font-style: italic;
+  color: #ffd700;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.hero-quote.soft {
+  color: #d6d8e0;
+}
+
+.founder-name {
+  font-size: 17px;
+  color: #9aa3ff;
+  margin-top: 10px;
+}
+
+/* Floating glow */
+.hero-left-accent {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(255,215,0,0.18), transparent 70%);
+  border-radius: 50%;
+  filter: blur(70px);
+  z-index: -1;
+  animation: floatAccent 18s ease-in-out infinite;
+}
+
+@keyframes floatAccent {
+  0%,100% { transform: translate(0,0); }
+  50% { transform: translate(20px,-25px); }
+}
