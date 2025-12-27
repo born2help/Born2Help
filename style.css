@@ -95,10 +95,7 @@ a:hover {
   margin-top: 10px;
 }
 
-.hero-left .founder-highlight {
-  color: #ffd700;
-  font-weight: 700;
-}
+<p class="founder-highlight">— Founder, B2H (Burn to Help)</p>
 
 @media (max-width: 900px) {
   .hero-left {
