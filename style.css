@@ -1078,3 +1078,122 @@ footer a:hover {
     font-size: 16px;
   }
 }
+
+/* ================= PARTICIPATION & FOUNDER SAFEGUARDS PREMIUM ================= */
+
+/* Participation Section Polished */
+.participation-section.polished {
+  position: relative;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 60px 24px;
+  background: linear-gradient(135deg, rgba(255,215,0,0.05), rgba(26,63,139,0.05));
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Participation Cards Enhancement */
+.participation-card.card {
+  background: rgba(255,255,255,0.05);
+  padding: 28px 26px;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.participation-card.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+/* Glowing Accent for Founder Safeguards */
+.burn-ethics.polished {
+  background: linear-gradient(135deg, rgba(255,215,0,0.08), rgba(26,63,139,0.08));
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  position: relative;
+  padding: 70px 24px;
+}
+
+.burn-ethics.polished::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(255,215,0,0.15), transparent 70%);
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: floatAccent 18s ease-in-out infinite;
+  z-index: -1;
+}
+
+.burn-ethics.polished ul li {
+  margin-bottom: 14px;
+  font-size: 17px;
+  color: #eaeaf0;
+  position: relative;
+  padding-left: 18px;
+}
+
+.burn-ethics.polished ul li::before {
+  content: "🔒";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 16px;
+}
+
+/* Small floating accents inside Participation Section */
+.participation-section.polished::before,
+.participation-section.polished::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.12;
+  filter: blur(6px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.participation-section.polished::before {
+  width: 140px;
+  height: 140px;
+  background: var(--gold);
+  top: -40px;
+  left: 10%;
+  animation: floatSlow 20s ease-in-out infinite;
+}
+
+.participation-section.polished::after {
+  width: 180px;
+  height: 180px;
+  background: var(--blue-soft);
+  bottom: -40px;
+  right: 15%;
+  animation: floatMedium 24s ease-in-out infinite;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .participation-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .burn-ethics.polished h3,
+  .participation-section.polished h2 {
+    font-size: 24px;
+  }
+
+  .burn-ethics.polished p,
+  .burn-ethics.polished ul li,
+  .participation-card.card p {
+    font-size: 16px;
+  }
+}
