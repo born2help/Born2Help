@@ -376,11 +376,11 @@ footer a:hover {
 
 /* ================= HERO CARD ================= */
 .hero-card {
-  background: rgba(255, 255, 255, 0.05); /* semi-transparent dark card */
+  background: rgba(255, 255, 255, 0.05);
   padding: 30px 25px;
   border-radius: 16px;
-  backdrop-filter: blur(8px); /* glass effect */
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25); /* subtle shadow */
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
 .hero-card h1, 
@@ -403,6 +403,12 @@ footer a:hover {
   font-size: 18px;
   line-height: 1.7;
   color: #cfd3ff;
+}
+
+.hero-card .founder-name {
+  font-style: italic;
+  font-size: 16px;
+  color: #ffd700;
 }
 
 /* ================= RESPONSIVE ================= */
