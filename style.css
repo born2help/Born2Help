@@ -192,38 +192,90 @@ a:hover {
   font-size: 17px;
 }
 
-/* ================= FOUNDER + MISSION + PROMISE ================= */
-.founder-mission .founder-quote {
+/* ================= FOUNDER + MISSION POLISHED ================= */
+.founder-mission.polished {
+  position: relative;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 60px 24px;
+  background: linear-gradient(135deg, rgba(255,215,0,0.05), rgba(26,63,139,0.05));
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.founder-mission.polished .founder-quote {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.founder-mission .founder-quote p {
+.founder-mission.polished .founder-quote p {
   font-size: 18px;
   line-height: 1.8;
-  color: #cfd3ff;
-  margin-bottom: 12px;
+  color: #eaeaf0;
+  margin-bottom: 16px;
 }
 
-.founder-mission .founder-name {
+.founder-mission.polished .founder-quote .founder-name {
   font-weight: 600;
   color: #ffd700;
+  font-size: 16px;
   margin-top: 12px;
 }
 
-.founder-mission .mission-card, 
-.founder-mission .promise-card {
+.founder-mission.polished .mission-card,
+.founder-mission.polished .promise-card {
   background: rgba(255,255,255,0.05);
+  padding: 24px;
   border-radius: 12px;
-  padding: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.founder-mission h3 {
-  text-align: left;
-  font-size: 22px;
+.founder-mission.polished .mission-card:hover,
+.founder-mission.polished .promise-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.1);
+}
+
+.founder-mission.polished h3 {
+  font-size: 26px;
+  margin-bottom: 18px;
   color: #ffd700;
+  text-align: center;
+}
+
+.founder-mission.polished p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #eaeaf0;
+}
+
+.founder-mission.polished ul {
+  padding-left: 22px;
+}
+
+.founder-mission.polished ul li {
   margin-bottom: 12px;
+  font-size: 16px;
+  color: #eaeaf0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .founder-mission.polished {
+    padding: 40px 20px;
+  }
+
+  .founder-mission.polished h3 {
+    font-size: 22px;
+  }
+
+  .founder-mission.polished p,
+  .founder-mission.polished ul li {
+    font-size: 15px;
+  }
 }
 
 /* ================= BURN + ETHICS ================= */
