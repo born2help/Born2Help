@@ -436,3 +436,40 @@ footer a:hover {
     font-size: 16px;
   }
 }
+
+/* ================= HERO TEXT POLISH ================= */
+
+.hero-tagline {
+  font-size: 20px;
+  color: #9aa3ff;
+  margin-bottom: 14px;
+  letter-spacing: 0.6px;
+}
+
+.hero-statement {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 26px 0;
+  color: #ffffff;
+  position: relative;
+  padding-left: 18px;
+}
+
+.hero-statement::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 4px;
+  height: 85%;
+  background: linear-gradient(to bottom, #ffd700, #6aa8ff);
+  border-radius: 2px;
+}
+
+.hero-subtext {
+  font-size: 18px;
+  color: #cfd3ff;
+  line-height: 1.7;
+  max-width: 680px;
+}
