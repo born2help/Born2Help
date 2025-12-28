@@ -260,3 +260,97 @@ footer a:hover { text-decoration: underline; }
   .section h3, .founder-mission h3, .burn-ethics h3, .participation-section h2 { font-size: 24px; }
   .section p, .founder-mission p, .burn-ethics p, .participation-card p { font-size: 16px; }
 }
+
+/* ================= HERO NEON GLOW ================= */
+.hero-left h1, .participation-hero h1 {
+  text-shadow:
+    0 0 8px var(--b2h-blue-soft),
+    0 0 16px var(--b2h-blue-soft),
+    0 0 24px var(--b2h-blue-main),
+    0 0 32px var(--b2h-blue-main);
+}
+
+.hero-left h2, .participation-hero h2 {
+  text-shadow:
+    0 0 6px var(--b2h-green),
+    0 0 12px var(--b2h-green);
+}
+
+.hero-left p, .participation-hero .hero-intro {
+  text-shadow: 0 0 4px rgba(255,255,255,0.15);
+}
+
+/* ================= CARD NEON GLOW ================= */
+.hero-card, .transparency-card, .participation-card, .mission-card, .promise-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::before, .transparency-card::before, .participation-card::before,
+.mission-card::before, .promise-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(50,205,50,0.12) 0%, transparent 70%);
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.hero-card:hover::before, .transparency-card:hover::before, .participation-card:hover::before,
+.mission-card:hover::before, .promise-card:hover::before {
+  transform: rotate(20deg) scale(1.05);
+  opacity: 0.9;
+}
+
+/* Card text on top of glow */
+.hero-card > *, .transparency-card > *, .participation-card > *,
+.mission-card > *, .promise-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ================= FLOATING NEON ACCENTS ================= */
+.floating-shape {
+  filter: blur(4px);
+  opacity: 0.15;
+  box-shadow:
+    0 0 15px rgba(50,205,50,0.35),
+    0 0 25px rgba(106,168,255,0.35),
+    0 0 35px rgba(255,215,0,0.25);
+  animation: floatNeon 20s ease-in-out infinite;
+}
+
+@keyframes floatNeon {
+  0%,100%{transform:translate(0,0);}
+  25%{transform:translate(-15px,20px);}
+  50%{transform:translate(25px,-15px);}
+  75%{transform:translate(-20px,-20px);}
+}
+
+/* ================= BUTTON GLOW ================= */
+.hero-right a, .participation-hero .hero-right a {
+  box-shadow:
+    0 4px 12px rgba(106,168,255,0.5),
+    0 0 8px rgba(50,205,50,0.4),
+    0 0 20px var(--b2h-blue-soft);
+}
+
+.hero-right a:hover, .participation-hero .hero-right a:hover {
+  box-shadow:
+    0 8px 30px rgba(106,168,255,0.8),
+    0 0 20px rgba(50,205,50,0.7),
+    0 0 50px var(--b2h-blue-soft);
+}
+
+/* ================= ADDITIONAL TEXT GLOW ================= */
+.section h3, .founder-mission h3, .burn-ethics h3, .participation-section h2 {
+  text-shadow:
+    0 0 4px var(--b2h-gold),
+    0 0 8px var(--b2h-gold),
+    0 0 16px rgba(255,215,0,0.4);
+}
