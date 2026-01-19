@@ -3,242 +3,377 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B2H Global Foundation — Burn to Help | Born for Humanity</title>
+  <title>B2H Global Foundation</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* ====== GLOBAL STYLES ====== */
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #0a0a0a;
-      color: #eee;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-    }
-    a {
-      text-decoration: none;
-      color: #0af;
-      transition: 0.3s;
-    }
-    a:hover { color: #08c; }
-
-    /* ====== NAVIGATION ====== */
-    nav {
-      position: sticky;
-      top: 0;
-      background: #111;
-      z-index: 100;
-      display: flex;
-      justify-content: center;
-      padding: 12px 0;
-      border-bottom: 1px solid #222;
-    }
-    nav a {
-      margin: 0 20px;
-      font-weight: 600;
-      color: #eee;
-    }
-
-    /* ====== HERO SECTION ====== */
-    .hero {
-      text-align: center;
-      padding: 100px 20px 60px;
-      background: linear-gradient(135deg, #111, #222);
-    }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-      color: #ccc;
-    }
-
-    /* ====== SECTION STYLES ====== */
-    section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 20px;
-      border-bottom: 1px solid #222;
-    }
-    section h2, section h3 {
-      color: #fff;
-      margin-bottom: 20px;
-    }
-    section p, section ul li {
-      color: #ccc;
-      margin-bottom: 12px;
-    }
-    section ul {
-      padding-left: 20px;
-    }
-    .soft {
-      background: #111;
-      padding: 40px 20px;
-      border-radius: 12px;
-      margin: 20px auto;
-    }
-
-    /* ====== BACK TO TOP ====== */
-    .back-home {
-      text-align: center;
-      margin: 40px 0;
-    }
-
-    /* ====== FOOTER ====== */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    /* ====== RESPONSIVE ====== */
-    @media (max-width: 600px){
-      nav a { margin: 0 10px; }
-      .hero h1 { font-size: 2.2rem; }
-      .hero p { font-size: 1rem; }
-      section { padding: 40px 15px; }
-    }
-  </style>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <a href="#about-us">About Us</a>
-    <a href="#white-paper">White Paper</a>
-    <a href="#transparency">Transparency</a>
-  </nav>
+<!-- ================= HERO SECTION ================= -->
+<section class="hero" id="hero">
+  <div id="particles-js" class="bg-particles"></div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Born to Help</h1>
-    <p>B2H (Burn to Help | Born for Humanity) is a humanitarian-first blockchain project designed to create real-world impact, not speculation. Transparency, patience, and long-term responsibility guide our work.</p>
-  </section>
+  <!-- Logos -->
+  <img src="images/logo.png" alt="Main Logo" class="main-logo-hero">
+  <img src="images/burn.png" alt="Burn Logo" class="burn-logo">
 
-  <!-- ABOUT US -->
-  <section id="about-us">
-    <h2>About Us</h2>
-    <p><strong>Our Story</strong><br>
-      B2H was created to explore a new way for technology to serve humanity. Unlike speculative digital assets, B2H connects participation with real-world humanitarian impact.
+  <!-- Hero Content -->
+  <div class="hero-content">
+    <h1 class="hero-title">Born To Help</h1>
+    <h2 class="hero-tagline">Burn for Humanity</h2>
+
+    <p class="hero-motivation">
+      ✨ One act of kindness can start a <span class="highlight">lifetime of impact</span>. Together, we create hope, change, and lasting relief.
     </p>
-    <p><strong>Our Purpose</strong><br>
-      - Embed compassion into blockchain technology<br>
-      - Support verified humanitarian initiatives and aid for the poor<br>
-      - Maintain transparency, accountability, and long-term trust
+
+    <p class="hero-description">
+      Transforming compassion into action — every contribution becomes a form of <strong>Sadaqah Jariyah</strong>, 
+      creating education, healthcare, food security, and dignity. 
+      Small acts ripple into lasting change.
     </p>
-    <p><strong>How We Work</strong><br>
-      - <strong>Fixed Supply Token:</strong> 500 billion B2H tokens, no future minting<br>
-      - <strong>Burn-to-Help Mechanism:</strong> Each burn contributes to charity and reduces supply<br>
-      - <strong>Separate Funds:</strong> Charity, operational, and treasury funds managed transparently<br>
-      - <strong>Founder Stewardship:</strong> Guided ethically, not for personal gain
+
+    <p class="hero-subtext">
+      Join us in building a sustainable humanitarian impact. 
+      Your help today shapes a brighter tomorrow.
     </p>
-    <p><strong>Our Values</strong><br>
-      Integrity over speed<br>
-      Trust over hype<br>
-      Patience over pressure<br>
-      Humanity over profit
-    </p>
-    <p><strong>Who We Serve</strong><br>
-      Individuals, charities, NGOs, and communities in need who benefit from direct, responsible support
-    </p>
-    <p><strong>Our Commitment</strong><br>
-      Participation is voluntary, focus is long-term impact, not short-term speculation.
-    </p>
-  </section>
-
-  <!-- WHITE PAPER -->
-  <section id="white-paper" class="soft">
-    <h2>White Paper</h2>
-    <p>B2H is built on <strong>patience, transparency, and long-term responsibility</strong>.</p>
-    <h3>Token Overview</h3>
-    <ul>
-      <li><strong>Name:</strong> B2H</li>
-      <li><strong>Meaning:</strong> Burn to Help | Born for Humanity</li>
-      <li><strong>Total Supply:</strong> 500,000,000,000 B2H</li>
-      <li><strong>Supply Type:</strong> Fixed (No inflation)</li>
-    </ul>
-    <p><strong>Burn-to-Help Mechanism:</strong> Each defined burn reduces supply and allocates toward verified humanitarian initiatives. Participation is voluntary; <strong>no financial guarantees</strong>.</p>
-    <h3>Transparency & Ethics</h3>
-    <ul>
-      <li>No promised profits or returns</li>
-      <li>Separate management of charity, operational, and treasury funds</li>
-      <li>Public transparency reports planned</li>
-      <li>Ethical governance and founder stewardship</li>
-    </ul>
-    <h3>How You Can Support</h3>
-    <ul>
-      <li>Learn about B2H and share its mission</li>
-      <li>Engage ethically and responsibly</li>
-      <li>Help spread awareness for transparent, humanitarian blockchain initiatives</li>
-    </ul>
-    <h3>Founder’s Message</h3>
-    <p>My name is Mubashir Munnawar.<br>
-    B2H was born from a belief that technology can serve humanity while remaining ethical and transparent. Participation is an <strong>act of service to humanity</strong>.</p>
-    <h3>Disclaimer</h3>
-    <p>B2H does not guarantee financial returns, price appreciation, or wealth generation. Engagement is voluntary and ethical.</p>
-  </section>
-
-  <!-- TRANSPARENCY -->
-  <section id="transparency">
-    <h2>Transparency Framework</h2>
-    <p>Transparency in B2H exists to protect trust — not to expose the vulnerable or invite harm.</p>
-
-    <section class="soft">
-      <h3>What We Commit to Disclose</h3>
-      <ul>
-        <li>Mission purpose and ethical constraints</li>
-        <li>Governance structure and safeguards</li>
-        <li>Participation principles and risk warnings</li>
-        <li>High-level humanitarian impact summaries</li>
-        <li>Use-of-funds categories (non-exploitable)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h3>What We Will Not Publicly Disclose</h3>
-      <ul>
-        <li>Exact wallet addresses or internal accounts</li>
-        <li>Detailed logistics of aid distribution</li>
-        <li>Personal identities of beneficiaries</li>
-        <li>Security-sensitive operational data</li>
-        <li>Private continuity designations</li>
-      </ul>
-      <p>Withholding information protects people — not power.</p>
-    </section>
-
-    <section class="soft">
-      <h3>Financial Communication Boundaries</h3>
-      <p>No price targets, profit projections, or speculative forecasts. Financial transparency exists only within ethical boundaries.</p>
-    </section>
-
-    <section>
-      <h3>Privacy as Protection</h3>
-      <p>Public exposure of suffering leads to stigma and exploitation. B2H protects dignity by refusing to turn suffering into content.</p>
-    </section>
-
-    <section class="soft">
-      <h3>Independent Accountability</h3>
-      <p>Trusted ethical reviewers may privately verify practices. No reviewer claims control or influence.</p>
-    </section>
-
-    <section>
-      <h3>Amanah (Trust)</h3>
-      <p>Trust is sacred. Careless disclosure can cause harm. Responsible restraint is always preferred over harmful exposure.</p>
-    </section>
-  </section>
-
-  <div class="back-home">
-    <a href="#hero">↑ Back to Top</a>
   </div>
 
-  <footer>
-    <p>© 2026 B2H Global Foundation</p>
-  </footer>
+  <!-- Hero Navigation Panel -->
+  <div class="hero-actions">
+    <a href="donate.html" class="donate">Donate</a>
+    <a href="tokenomics.html" class="tokenomics">Tokenomics</a>
+    <a href="about.html" class="about">About</a>
+    <a href="white-paper.html" class="white-paper">White Paper</a>
+    <a href="transparency.html" class="transparency">Transparency</a>
+  </div>
+</section>
 
+<!-- ================= FOUNDER MESSAGE ================= -->
+<section class="founder-section">
+  <div class="container">
+    <h2>Message from the Founder</h2>
+    <p class="founder-intro">
+      B2H was founded on one belief: wealth should heal humanity, not divide it.
+      Our mission is sustainable impact that lives on for generations.
+    </p>
+
+    <div class="founder-content">
+      <div class="founder-image">
+        <img src="images/founder.jpg" alt="Founder of B2H">
+      </div>
+      <div class="founder-text">
+        <p>My name is <strong>Mubashir Munnawar</strong>. B2H (Burn to Help | Born for Humanity) was born from a belief: humanity can use technology responsibly to serve people in need.</p>
+        <p>Built on patience, transparency, and long-term responsibility. Participation is voluntary and based on shared values.</p>
+        <p>Born to Help is a living system of compassion — every donation becomes a permanent asset serving humanity.</p>
+        <p class="signature">— Founder, B2H Global Foundation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GOVERNANCE & TRUSTEES ================= -->
+<section id="governance" class="section governance-section">
+  <div class="container">
+    <h2>Governance, Constitution & Trustees</h2>
+    <p class="governance-intro">
+      B2H is governed by a constitution that prioritizes purpose, transparency, and humanity.
+    </p>
+
+    <div class="governance-block constitution-block">
+      <h3>Foundational Constitution</h3>
+      <ul class="constitution-list">
+        <li><strong>Purpose Above All:</strong> Reduce suffering and protect human dignity.</li>
+        <li><strong>Transparency & Trust:</strong> Every contribution is a sacred trust. <a href="transparency.html">Transparency Framework</a></li>
+        <li><strong>No Riba / Interest:</strong> All financial activity follows ethical principles.</li>
+        <li><strong>Founder as Guardian:</strong> No personal ownership or profit. Founder decisions remain final.</li>
+        <li><strong>Ethical Oversight:</strong> Rotating council ensures accountability.</li>
+        <li><strong>Structural Safeguards:</strong> Audit locks, mission-freeze, transparency rules.</li>
+      </ul>
+    </div>
+
+    <div class="governance-flow-container">
+      <div class="glow-line"></div>
+      <div class="governance-node">
+        <h4>Governance Framework</h4>
+        <p>Preserve integrity, prevent misuse, ensure alignment with humanitarian purpose.</p>
+      </div>
+      <div class="governance-node">
+        <h4>Founder Guardian Role</h4>
+        <p>Founder acts solely as guardian of vision and ethics — no ownership or profit rights.</p>
+      </div>
+      <div class="governance-node">
+        <h4>Ethical Council</h4>
+        <p>Rotating body providing moral oversight, accountability, and ethical alignment.</p>
+      </div>
+      <div class="governance-node">
+        <h4>Structural Safeguards</h4>
+        <p>Protections ensuring continuity, transparency, and resistance to mission drift.</p>
+      </div>
+    </div>
+
+    <div class="governance-block trustees-block">
+      <h3>Board of Trustees</h3>
+      <div class="board-members">
+        <div class="board-card">
+          <img src="images/member1.jpg" alt="Chairperson">
+          <h4>Ms. Sameera</h4>
+          <p>Chairperson — Ethical direction and strategic oversight.</p>
+        </div>
+        <div class="board-card">
+          <img src="images/member2.jpg" alt="Financial Trustee">
+          <h4>Financial Trustee</h4>
+          <p>Transparency, audits, and responsible fund allocation.</p>
+        </div>
+        <div class="board-card">
+          <img src="images/member3.jpg" alt="Community Trustee">
+          <h4>Community Trustee</h4>
+          <p>Represents beneficiaries and community impact.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TOKENOMICS ================= -->
+<section id="tokenomics" class="tokenomics">
+  <div class="tokenomics-container">
+    <div id="particles-tokenomics" class="bg-particles token-particles"></div>
+   
+    <h2 class="tokenomics-title">Tokenomics</h2>
+    <div class="tokenomics-underline"></div>
+    <p class="tokenomics-subtitle">Transparent, ethical distribution designed for sustainability, charity, and long-term value.</p>
+
+    <div class="tokenomics-bars">
+      <div class="token-box">
+        <div class="bar bar-charity"><span>5%</span></div>
+        <h3>Charity Allocation</h3>
+        <p>Direct sadaqah distribution worldwide.</p>
+      </div>
+      <div class="token-box">
+        <div class="bar bar-ops"><span>3%</span></div>
+        <h3>Operations</h3>
+        <p>Office, audits, infrastructure, and system continuity.</p>
+      </div>
+      <div class="token-box">
+        <div class="bar bar-burn"><span>2%</span></div>
+        <h3>Permanent Burn</h3>
+        <p>Tokens removed to protect scarcity and value.</p>
+      </div>
+      <div class="token-box">
+        <div class="bar bar-liquidity"><span>10%</span></div>
+        <h3>Liquidity & Stability</h3>
+        <p>Market balance, stability mechanisms, smooth trading.</p>
+      </div>
+      <div class="token-box">
+        <div class="bar bar-community"><span>80%</span></div>
+        <h3>Community Supply</h3>
+        <p>Accessible participation for all.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW HUMANITY WORKS ================= -->
+<section id="how-humanity-works" class="how-humanity-works">
+  <div class="container">
+    <h2>How Humanity Works</h2>
+    <div class="section-underline"></div>
+    <p class="subheading">Every action in B2H creates real, traceable humanitarian impact.</p>
+
+    <div class="flow-container">
+      <div class="flow-line"></div>
+      <span class="moving-arrow">➜</span>
+      <span class="moving-arrow delay-1">➜</span>
+      <span class="moving-arrow delay-2">➜</span>
+
+      <div class="flow-steps">
+        <div class="step">
+          <img src="icons/identify-need.svg" class="step-icon" alt="">
+          <h3>Identify Need</h3>
+          <p>We assess urgent humanitarian needs with local verification.</p>
+        </div>
+        <div class="step">
+          <img src="icons/mobilize-resources.svg" class="step-icon" alt="">
+          <h3>Mobilize Resources</h3>
+          <p>Funds, assets, and volunteers mobilized transparently.</p>
+        </div>
+        <div class="step">
+          <img src="icons/implement-project.svg" class="step-icon" alt="">
+          <h3>Implement Projects</h3>
+          <p>Projects executed sustainably and accountably.</p>
+        </div>
+        <div class="step">
+          <img src="icons/measure-impact.svg" class="step-icon" alt="">
+          <h3>Measure Impact</h3>
+          <p>Every outcome is tracked, audited, and reported.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="#join-movement" class="btn">Join the Movement</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHARITIES ================= -->
+<section id="charity" class="section dark charity-section">
+  <div class="container">
+    <h2 class="section-title green-glow">Our Charities</h2>
+    <div class="section-underline"></div>
+    <p class="charity-intro">B2H addresses fundamental human needs through sustainable, transparent initiatives.</p>
+
+    <div class="charity-grid">
+      <div class="charity-card">
+        <img src="images/charity-health.jpg" alt="Health & Education">
+        <div class="charity-content">
+          <h3>Health & Education</h3>
+          <p>Access to healthcare and quality education, empowering individuals for a stronger future.</p>
+        </div>
+      </div>
+      <div class="charity-card">
+        <img src="images/charity-food.jpg" alt="Food & Shelter">
+        <div class="charity-content">
+          <h3>Food & Shelter</h3>
+          <p>Nutritious food, safe shelter, and emergency relief for vulnerable families.</p>
+        </div>
+      </div>
+      <div class="charity-card">
+        <img src="images/charity-environment.jpg" alt="Environment & Sustainability">
+        <div class="charity-content">
+          <h3>Environment & Sustainability</h3>
+          <p>Conservation, sustainability programs, and climate responsibility.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DONATIONS & REAL ASSETS ================= -->
+<section id="donations-assets" class="assets-section">
+  <div class="container">
+    <h2>Donations & Real Assets</h2>
+    <div class="assets-underline"></div>
+    <p class="assets-intro">Donations at B2H are transformed into <strong>permanent, income-generating assets</strong> serving humanity.</p>
+
+    <div class="assets-grid">
+      <div class="asset-card">
+        <h3>Permanent Ownership</h3>
+        <p>Assets remain under B2H ownership forever.</p>
+      </div>
+      <div class="asset-card">
+        <h3>Halal Income</h3>
+        <p>Assets generate ethical, halal income.</p>
+      </div>
+      <div class="asset-card highlight">
+        <h3>Sadaqah Jariyah</h3>
+        <p>Profits flow continuously to humanitarian causes.</p>
+      </div>
+      <div class="asset-card">
+        <h3>Transparent Flow</h3>
+        <p>Every donation, asset, and profit stream is documented to ensure trust.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MISSION & VISION ================= -->
+<section id="mission" class="section mission">
+  <div class="container">
+    <h2>Mission & Vision</h2>
+    <div class="section-underline"></div>
+    <p class="subheading">Helping others automatically and sustainably.</p>
+
+    <div class="mission-vision-cards">
+      <div class="mv-card">
+        <div class="mv-icon">🎯</div>
+        <h3>Mission</h3>
+        <p>Self-sustaining humanitarian system where financial growth translates into relief and dignity.</p>
+      </div>
+      <div class="mv-card">
+        <div class="mv-icon">🌍</div>
+        <h3>Vision</h3>
+        <p>A world where everyone can participate in lasting good.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ROADMAP ================= -->
+<section id="roadmap" class="section roadmap dark-section">
+  <div class="container">
+    <h2 class="section-title green-glow">Roadmap</h2>
+    <ul class="roadmap-list fade-on-scroll readable-text">
+      <li><span class="step-circle" style="background:#14b8a6;"></span>Foundation formation & legal structure</li>
+      <li><span class="step-circle" style="background:#f59e0b;"></span>Token launch on blockchain</li>
+      <li><span class="step-circle" style="background:#3b82f6;"></span>Initial humanitarian deployments</li>
+      <li><span class="step-circle" style="background:#ef4444;"></span>Real asset acquisition</li>
+      <li><span class="step-circle" style="background:#10b981;"></span>Global partnerships & expansion</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= JOIN THE MOVEMENT ================= -->
+<section id="join-movement" class="section join-movement dark-section">
+  <div class="container">
+    <h2 class="section-title green-glow">Join the Movement</h2>
+    <div class="section-underline"></div>
+    <p class="readable-text">Be part of B2H and make a lasting difference.</p>
+
+    <div class="join-buttons">
+      <a href="#" class="btn-join donate">Donate Now</a>
+      <a href="#" class="btn-join volunteer">Become a Volunteer</a>
+      <a href="#" class="btn-join spread">Spread Awareness</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="B2H Logo">
+        <p>B2H Global Foundation — building sustainable humanitarian impact.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#governance">Governance</a></li>
+          <li><a href="#tokenomics">Tokenomics</a></li>
+          <li><a href="#mission">Mission & Vision</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#join">Join the Movement</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Jakarta, Indonesia</p>
+        <p>Email: info@b2hglobal.org</p>
+        <p>Phone: +62 812-3456-7890</p>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PARTICLES JS -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="main.js"></script>
+</footer>
 </body>
 </html>
