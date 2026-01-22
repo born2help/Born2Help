@@ -1,33 +1,148 @@
-<!-- ABOUT US SECTION -->
-<section class="section">
-  <h3>About Us</h3>
-  <p><strong>Our Story</strong><br>
-     B2H (Burn to Help | Born for Humanity) was created to explore a new way for technology to serve humanity. Unlike speculative digital assets, B2H was designed from the start to connect participation with real-world humanitarian impact.
-  </p>
-  <p><strong>Our Purpose</strong><br>
-     - Embed compassion into blockchain technology<br>
-     - Support verified humanitarian initiatives and aid for the poor<br>
-     - Maintain transparency, accountability, and long-term trust
-  </p>
-  <p><strong>How We Work</strong><br>
-     - <strong>Fixed Supply Token:</strong> 500 billion B2H tokens, no future minting<br>
-     - <strong>Burn-to-Help Mechanism:</strong> Every defined burn event contributes to charitable allocations and reduces circulating supply<br>
-     - <strong>Separate Funds:</strong> Charity, operational, and treasury funds are managed transparently<br>
-     - <strong>Founder Stewardship:</strong> Project guided ethically, not for personal gain
-  </p>
-  <p><strong>Our Values</strong><br>
-     Integrity over speed<br>
-     Trust over hype<br>
-     Patience over pressure<br>
-     Humanity over profit
-  </p>
-  <p><strong>Who We Serve</strong><br>
-     Individuals who want to participate consciously<br>
-     Charities, NGOs, and institutions seeking transparency<br>
-     Communities in need who benefit from direct, responsible support
-  </p>
-  <p><strong>Our Commitment</strong><br>
-     B2H is a humanitarian-first project. There are no guaranteed returns, no financial promises, and no shortcuts. Participation is voluntary, and the focus is long-term impact, not short-term speculation.
-  </p>
-  <p><em>Our goal is to build a project that is respected globally, trusted by humans and institutions, and moral by design — a legacy that can continue beyond the founder.</em></p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — B2H Global Foundation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-page glass-page">
+
+  <!-- ================= TOP NAVIGATION ================= -->
+  <nav class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="white-paper.html">White Paper</a>
+    <a href="burn-ethics.html">Burn & Ethics</a>
+    <a href="founder-continuity.html">Founder Continuity</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="tokenomics.html">Tokenomics</a>
+    <a href="donate.html">Donate</a>
+  </nav>
+
+  <section class="glass-container">
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="page-hero">
+      <h1 class="green-glow">About B2H Global Foundation</h1>
+      <p class="subtitle">
+        Built for Humanity • Driven by Purpose • Guided by Ethics
+      </p>
+
+      <div class="hero-actions">
+        <a href="donate.html" class="donate">Donate Now</a>
+        <a href="white-paper.html" class="whitepaper">Read White Paper</a>
+        <a href="burn-ethics.html" class="extra">Burn & Ethics</a>
+        <a href="founder-continuity.html" class="extra">Founder Continuity</a>
+        <a href="index.html" class="hero-home">← Back Home</a>
+      </div>
+
+      <hr class="section-divider">
+    </section>
+
+    <!-- ================= CONTENT ================= -->
+    <section class="section">
+
+      <div class="wp-section">
+        <h2 class="section-title">Who We Are</h2>
+        <p>
+          <strong>B2H</strong> (Burn to Help | Born for Humanity) is a humanitarian-first foundation.
+          We ensure that helping people is never dependent on trends, emotions, or market cycles.
+          Ethics, responsibility, and long-term impact guide every decision.
+        </p>
+      </div>
+
+      <hr class="section-divider">
+
+      <div class="wp-section">
+        <h2 class="section-title">Our Vision</h2>
+        <p>
+          A world where systems are designed to continuously help humanity —
+          where relief, dignity, education, and care persist regardless of wealth or economic conditions.
+        </p>
+      </div>
+
+      <hr class="section-divider">
+
+      <div class="wp-section">
+        <h2 class="section-title">Our Mission</h2>
+        <p>
+          To convert contributions into sustainable mechanisms that serve humanity continuously,
+          creating a true <strong>Sadaqah Jariyah</strong> for both participants and beneficiaries.
+        </p>
+      </div>
+
+      <hr class="section-divider">
+
+      <div class="wp-section">
+        <h2 class="section-title">Founder’s Intention</h2>
+        <p>
+          B2H was founded by <strong>Mubashir Munnawar</strong> on a simple belief:
+          technology should serve humanity without compromising ethics.
+          No personal financial gain exists — every decision is made with patience, accountability, and responsibility before Allah.
+        </p>
+      </div>
+
+      <hr class="section-divider">
+
+      <div class="wp-section">
+        <h2 class="section-title">Core Values</h2>
+        <ul>
+          <li><strong>Integrity</strong> — over speed and shortcuts</li>
+          <li><strong>Trust</strong> — over hype and noise</li>
+          <li><strong>Patience</strong> — over pressure and instant results</li>
+          <li><strong>Humanity</strong> — over profit and popularity</li>
+          <li><strong>Transparency</strong> — within ethical and safe boundaries</li>
+        </ul>
+      </div>
+
+      <hr class="section-divider">
+
+      <div class="wp-section highlight">
+        <h2 class="section-title green-glow">Our Commitment</h2>
+        <p>
+          B2H protects dignity and ensures sustainable relief for the most vulnerable.
+          Every structure, system, and process is designed for long-term stewardship —
+          helping not just for years, but for generations.
+        </p>
+      </div>
+
+      <a href="index.html" class="glass-back">← Back Home</a>
+    </section>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer dark-section">
+    <div class="container footer-container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="white-paper.html">White Paper</a>
+        <a href="burn-ethics.html">Burn & Ethics</a>
+        <a href="founder-continuity.html">Founder Continuity</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="tokenomics.html">Tokenomics</a>
+        <a href="donate.html">Donate</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 B2H Global Foundation. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SCROLL ANIMATION SCRIPT ================= -->
+  <script>
+    const sections = document.querySelectorAll('.section, .wp-section, .page-hero');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
