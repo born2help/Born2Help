@@ -14,11 +14,71 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
 
-  </head>
+ <style>
+/* ================= HERO SUBPAGE BUTTONS ================= */
+.hero-subpages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.hero-subpages a {
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.hero-subpages a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* Individual button colors */
+.hero-subpages a.btn-about { background: #4da6ff; }          /* calm blue */
+.hero-subpages a.btn-white-paper { background: #d6d6d6; }    /* neutral silver */
+.hero-subpages a.btn-tokenomics { background: #00ffd0; }     /* cyan */
+.hero-subpages a.btn-transparency { background: #8B0000; }   /* red */
+.hero-subpages a.btn-donate { background: #7CFC00; }         /* life green */
+.hero-subpages a.btn-constitution { background: #f5c542; }  /* constitution */
+.hero-subpages a.btn-burn-ethics { background: #FF1493; }    /* pink */
+.hero-subpages a.btn-founder-continuity { background: #facc15; color: #000; } /* yellow, black text */
+.hero-subpages a.btn-participation-safeguard { background: #00008B; } /* emerald */
+.hero-subpages a.btn-disclaimer { background: #ff6b6b; }     /* soft red */
+.hero-subpages a.btn-vision { background: #9b6bff; }         /* royal purple */
+.hero-subpages a.btn-sress-test { background: #ff8c42; }     /* deep orange */
+  
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .hero-subpages {
+    gap: 8px;
+    margin-top: 15px;
+  }
+  .hero-subpages a {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-subpages a {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+  }
+}
+</style>
+</head>
 <body>
 
 <!-- ================= HERO SECTION ================= -->
- <section class="hero" id="hero">
+<section class="hero" id="hero">
   <div id="particles-js" class="bg-particles"></div>
 
   <!-- Logos -->
@@ -46,13 +106,19 @@
     </p>
   </div>
 
-  <!-- Hero Buttons -->
-  <div class="hero-actions">
-    <a href="donate.html" class="donate">Donate</a>
-    <a href="tokenomics.html" class="tokenomics">Tokenomics</a>
-    <a href="about.html" class="about">About</a>
-    <a href="white-paper.html" class="white-paper">White Paper</a>
-    <a href="transparency.html" class="transparency">Transparency</a>
+  <!-- ================= SUBPAGE BUTTONS ================= -->
+  <div class="hero-subpages">
+    <a href="about.html" class="btn-about">About</a>
+    <a href="white-paper.html" class="btn-white-paper">White Paper</a>
+    <a href="tokenomics.html" class="btn-tokenomics">Tokenomics</a>
+    <a href="transparency.html" class="btn-transparency">Transparency</a>
+    <a href="donate.html" class="btn-donate">Donate</a>
+    <a href="constitution.html" class="btn-constitution">Constitution</a>
+    <a href="burn-ethics.html" class="btn-burn-ethics">Burn & Ethics</a>
+    <a href="founder-continuity.html" class="btn-founder-continuity">Founder Continuity</a>
+    <a href="participation-safeguard.html" class="btn-participation-safeguard">Participation Safeguard</a>
+    <a href="disclaimer.html" class="btn-disclaimer">Disclaimer</a>
+    <a href="vision.html" class="btn-vision">Vision</a>
   </div>
 </section>
   
