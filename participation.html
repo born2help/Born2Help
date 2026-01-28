@@ -62,6 +62,10 @@
     <a href="#awareness"><i class="fas fa-bullhorn"></i> Spread Awareness</a>
     <a href="index.html">← Home</a>
   </div>
+
+  <div class="scroll-indicator">
+  <span></span>
+</div>
 </section>
 
 <hr class="section-divider">
@@ -155,6 +159,17 @@
 <footer class="site-footer">
   <p>© 2026 B2H Global Foundation — Built for Humanity</p>
 </footer>
+
+ <script>
+  const indicator = document.querySelector('.scroll-indicator');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      indicator.style.opacity = '0';
+    } else {
+      indicator.style.opacity = '1';
+    }
+  });
+</script> 
 
 </body>
 </html>
