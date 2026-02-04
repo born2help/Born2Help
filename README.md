@@ -1,4 +1,4 @@
-# B2H — Burn to Help | Born for Humanity
+# B2H — Breath to Help | Born for Humanity
 
 B2H is a humanitarian-first blockchain project where participation contributes directly to helping people in need.  
 This project is built on **patience, transparency, and long-term responsibility**.
